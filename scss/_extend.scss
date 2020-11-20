@@ -1,0 +1,83 @@
+@mixin col($column) {
+    flex-basis: $column / 12 * 100%;
+    max-width: $column / 12 * 100%;
+}
+
+%body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+%flex{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+}
+%transition{
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+%padding{
+    padding: 10px 30px;
+} 
+%h2{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+%button{
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+%col-1{
+    @include col(1);
+}
+%col-2{
+    @include col(2);
+}
+%col-3,.col-3{
+    @include col(3);
+}
+%col-4,.col-4{
+    @include col(4);
+}
+%col-5{
+    @include col(5);
+}
+%col-6,.col-6{
+    @include col(6);
+}
+%col-7{
+    @include col(7);
+}
+%col-8,.col-8{
+    @include col(8);
+}
+%col-9{
+    @include col(9);
+}
+%col-10,.col-10{
+    @include col(10);
+}
+%col-11{
+    @include col(11);
+}
+%col-12,.col-12{
+    @include col(12);
+}
+
+
+
+
+
+
+
+
+
+
+
